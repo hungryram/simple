@@ -12,6 +12,10 @@
             {{ partial "featured-tiles" . }}
         {{ end }}
 
+        {{ if eq "cta" .template }}
+        {{ partial "cta" . }}
+        {{ end }}
+
         {{ if eq "idx-search-bar" .template }}
             <div class="section" style="{{ safeHTMLAttr (printf "background-color: %s" .idx_background_color) }}">
                 <div class="container">
