@@ -6,8 +6,7 @@ webhook_url:
 sections:
 - type: document
   path: config.toml
-  label: Settings
-  match: "**/*"
+  label: Developers Only
 - type: heading
   label: My Website
 - type: document
