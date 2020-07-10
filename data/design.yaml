@@ -70,7 +70,7 @@ colors:
   header_background_color: "#0B1723"
   navigation_link_color: "#BA0000"
   enable_black_menu_items: false
-  top_bar_background: "#AA9D82"
+  top_bar_background: "#707985"
   top_bar_enable_black_text_color: false
 upload_image: ''
 slideshow:
