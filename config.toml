@@ -1,4 +1,4 @@
-baseURL = "https://trialrun.netlify.app"
+baseURL = "https://simplere.netlify.app"
 languageCode = "en-us"
 summarylength = 20
 [[menu.main]]
@@ -9,7 +9,7 @@ weight = 5
 name = "Mortgage Calculator"
 parent = "Resources"
 url = "https://simple.idxhome.com/mortcalc/133407"
-weight = 4
+weight = "4"
 [[menu.main]]
 name = "Featured Properties"
 parent = "Buying"
