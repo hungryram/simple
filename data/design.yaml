@@ -63,6 +63,28 @@ home_sections:
 - template: testimonial-slider
   testimonial_slider_title: Client Reviews
   testimonial_slider_subtitle: Our clients love us
+- template: cta
+  call_to_action_one:
+    icon_one_cta: []
+    image_one_cta: ''
+    title_one_cta: ''
+    body_text_one_cta: ''
+    cta_one_add_a_link: ''
+    cta_two_new_tab: false
+  call_to_action_two:
+    icon_two_cta: []
+    image_two_cta: ''
+    title_two_cta: ''
+    body_text_two_cta: ''
+    cta_two_add_a_link: ''
+    cta_two_new_tab: false
+  call_to_action_three:
+    icons_three_cta: []
+    image_three_cta: ''
+    title_three_cta: ''
+    body_text_three_cta: ''
+    cta_three_add_a_link: ''
+    cta_three_new_tab: false
 sub_pages:
   sub_page_image: "/uploads/main.jpg"
 footer:
