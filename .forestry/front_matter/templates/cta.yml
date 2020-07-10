@@ -6,21 +6,6 @@ fields:
   type: field_group
   config: {}
   fields:
-  - name: icon_one_cta
-    type: select
-    default: []
-    config:
-      required: false
-      options: []
-      source:
-        type: documents
-        section: icons
-        file: data/icons.json
-        path: 
-    label: Icons
-    description: Removing the icon will activate the image section if an image is
-      uploaded.<br>Icons are from <a href="https://fontawesome.com/icons" title=""
-      target="_blank">FontAwesome</a>
   - name: image_one_cta
     type: file
     config:
@@ -32,15 +17,6 @@ fields:
     config:
       required: false
     label: Title
-  - name: body_text_one_cta
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: false
-      schema:
-        format: markdown
-    label: Body Text
   - name: cta_one_add_a_link
     type: text
     config:
@@ -56,18 +32,6 @@ fields:
   type: field_group
   config: {}
   fields:
-  - name: icon_two_cta
-    type: select
-    default: []
-    config:
-      required: false
-      options: []
-      source:
-        type: documents
-        section: icons
-        file: data/icons.json
-        path: 
-    label: Icons
   - name: image_two_cta
     type: file
     config:
@@ -79,15 +43,6 @@ fields:
     config:
       required: false
     label: Title
-  - name: body_text_two_cta
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: false
-      schema:
-        format: markdown
-    label: Body Text
   - name: cta_two_add_a_link
     type: text
     config:
@@ -103,18 +58,6 @@ fields:
   type: field_group
   config: {}
   fields:
-  - name: icons_three_cta
-    type: select
-    default: []
-    config:
-      required: false
-      options: []
-      source:
-        type: documents
-        section: icons
-        file: data/icons.json
-        path: 
-    label: Icons
   - name: image_three_cta
     type: file
     config:
@@ -125,15 +68,6 @@ fields:
     config:
       required: false
     label: Title
-  - name: body_text_three_cta
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: false
-      schema:
-        format: markdown
-    label: Body Text
   - name: cta_three_add_a_link
     type: text
     config:
