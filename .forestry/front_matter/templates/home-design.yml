@@ -51,6 +51,15 @@ fields:
   - name: enable_black_menu_items
     type: boolean
     label: Enable Black Menu Items
+  - name: top_bar_background
+    type: color
+    label: Top Bar Background
+    config:
+      required: false
+      color_format: Hex
+  - name: top_bar_enable_black_text_color
+    type: boolean
+    label: Enable Top Bar Black Text Color
   label: Colors
 - name: slideshow
   type: field_group
