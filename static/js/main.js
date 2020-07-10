@@ -15,12 +15,13 @@ $(document).ready(function () {
         $('.descend').addClass('hidden');
         $('.ascend').removeClass('hidden');
       });
+});
 
-      //BULMA FOR SORTING
-      $('.dropdown-trigger').click(function(e){
-        $('.sorttrigger').toggleClass('is-active');
-        e.stopPropagation();
-      });
+$('.home-slide').slick({
+  infinite: true,
+  autoplay: true,
+  speed: 1000,
+  autoplaySpeed: 5000,
 });
 
 // TESTIMONIAL SLIDER

@@ -1,5 +1,6 @@
 baseURL = "https://trialrun.netlify.app"
 languageCode = "en-us"
+summarylength = 20
 [[menu.main]]
 name = "Login"
 url = "https://simple.idxhome.com/organizer/login/133407"

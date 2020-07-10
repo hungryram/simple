@@ -9,7 +9,7 @@
               {{ with .Site.Data.design.footer.footer_logo}}
           <img src="{{ . }}" alt="{{ $.Site.Data.profile.primary_company_name }}" width="200">
               {{ else }}
-          <h1 class="title is-4 footer-logo-text"  {{ if .Site.Data.design.footer.enable_black_text}}style="color:black"{{else}} style="color:white"{{end}}>{{ .Site.Data.design.logo_or_title.title }}</h1>
+          <h1 class="title is-4 footer-logo-text"  {{ if .Site.Data.design.footer.enable_black_text}}style="color:black"{{else}} style="color:white"{{end}}>{{ .Site.Data.profile.primary_company_name }}</h1>
               {{ end }}
         </a>
         <p>{{ .Site.Data.design.footer.footer_bio }}</p>
@@ -22,6 +22,10 @@
 
           {{ with $footerSocial.instagram }}
           <li><a href="{{ . }}" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+          {{end}}
+
+          {{ with $footerSocial.yelp }}
+          <li><a href="{{ . }}" target="_blank" title="Yelp"><i class="fab fa-yelp"></i></a></li>
           {{end}}
 
           {{ with $footerSocial.linkedin }}
@@ -150,7 +154,7 @@
                 });
 
                 $('.sub-menu').click(function(){
-                $('.sub').toggleClass('sub-active-menu');
+                $('.sub', this).toggleClass('sub-active-menu');
                  });
             });
             </script>

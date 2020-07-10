@@ -48,6 +48,11 @@ div#share-buttons i {
     font-size: 15px;
 }
 
+/* SLIDESHOW */
+
+.home-slide.slick-initialized.slick-slider {
+    top: -100px;
+}
 
 /* LISTING CAROUSEL */
 
@@ -294,6 +299,20 @@ li.active a {
     display: none;
 }
 
+/* TOPBAR */
+
+.top-bar {
+    text-align: right;
+    padding: 5px 15px;
+}
+
+.top-bar i {
+    margin: 0 8px;
+}
+
+.top-bar a {
+    font-size: 14px;
+}
 
 /* NAV */
 @media screen and (max-width: 1087px){
@@ -423,6 +442,7 @@ li.active a {
 /* ALL SCREEN SIZE MENU */
 header.navbar {
     padding: 10px 0;
+    box-shadow: 0px 4px 20px 0px #1a1a1a;
 }
 
 a.navbar-item img {
@@ -454,6 +474,12 @@ section.hero__container {
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 10px;
+}
+
+div.hero-body {
+    left: 0;
+    right:0;
+    top: 40%;
 }
 
 .hero-body h1 {
