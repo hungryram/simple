@@ -4,9 +4,6 @@ auto_deploy: false
 admin_path: "/static/admin"
 webhook_url: 
 sections:
-- type: document
-  path: config.toml
-  label: Developers Only
 - type: heading
   label: My Website
 - type: document
@@ -69,8 +66,9 @@ sections:
 - type: document
   path: data/idx.yaml
   label: Set Up
-- type: heading
-  label: Misc
+- type: document
+  path: config.toml
+  label: Developers Only
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
