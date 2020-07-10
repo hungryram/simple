@@ -1210,10 +1210,24 @@ ul.footer-social li {
     color: #c2c2c2!important
 }
 
+@media screen and (max-width:768px){
+    .hero-foot {
+        display: none;
+    }
+}
 
+@media screen and (min-width:768px) {
+    #mobile-qs {
+        display: none;
+    }
+}
 
 .hero-foot {
     background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    right: 0;
 }
 
 .hero-foot div.section {

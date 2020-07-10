@@ -37,5 +37,14 @@
       </div>
   </div>
 {{ end }}
-  
-  </section>
+
+</section>
+{{ if .Site.Data.idx.enable_home_quick_search }}
+
+<div class="section" id="mobile-qs">
+  <div class="container">
+    <h1 class="subtitle is-4">Quick Search</h1>
+  <script type="text/javascript" src="https://www.idxhome.com/site/listing/search/widget/{{ $.Site.Data.idx.idx_id }}?style=horizontal"></script>
+</div>
+</div>
+{{ end }}
