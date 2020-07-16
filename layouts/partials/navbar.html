@@ -11,9 +11,9 @@
 
       <div class="container">
         <div class="navbar-brand">
-          <a class="navbar-item" href="/">
+          <a class="navbar-item" href="{{ .Site.BaseURL }}">
                 {{ with .Site.Data.design.logo_or_title.upload_logo}}
-            <img src="{{ . }}" alt="{{ $.Site.Data.profile.primary_company_name }}">
+            <img src="{{ . | absURL }}" alt="{{ $.Site.Data.profile.primary_company_name }}">
                 {{ else }}
             <h1>{{ .Site.Data.design.logo_or_title.title }}</h1>
                 {{ end }}
@@ -38,12 +38,12 @@
                   </a>
                   <ul class="sub" style="background: #fff;">
                       {{ range .Children }}
-                      <li{{if $currentPage.IsMenuCurrent "main" . }} class="active"{{end}}><a href="{{.URL}}" style="color:black">{{ .Name }}</a> </li>
+                      <li{{if $currentPage.IsMenuCurrent "main" . }} class="active"{{end}}><a href="{{.URL | absURL }}" style="color:black">{{ .Name }}</a> </li>
                       {{ end }}
                   </ul>
                 {{else}}
                   <li>
-                  <a href="{{.URL}}" class="nav-item"{{ if not $.IsHome }}{{ if $.Site.Data.design.colors.enable_black_menu_items }}style="color: black"{{ end }}{{ else }}style="color: #fff"{{end}}>
+                  <a href="{{ .URL | absURL }}" class="nav-item"{{ if not $.IsHome }}{{ if $.Site.Data.design.colors.enable_black_menu_items }}style="color: black"{{ end }}{{ else }}style="color: #fff"{{end}}>
                       {{ .Pre }}
                       <span>{{ .Name }}</span>
                   </a>
